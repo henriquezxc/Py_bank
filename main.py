@@ -28,3 +28,5 @@ master.bind("<Button-2>",clique_do_mouse)
 
 # Codigo obrigatorio do Tkinter, para não fechar a janela atual
 master.mainloop()
+
+#alteração teste
