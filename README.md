@@ -1,2 +1,2 @@
 # Py_bank
-Py_Bank
+Pequeno projeto de um app de banco super simples usando o Tkinter.
