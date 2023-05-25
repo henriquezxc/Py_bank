@@ -1,3 +1,9 @@
+"""
+ATENÇÃO:
+Para evitar erros, recomendo verificar com atenção cada modulo que deverá ser instalado
+Todos os requisitos para essa aplicação funcionar está no fim desta pagina!
+"""
+
 # Importações dos modulos da interfase grafica:
 from tkinter import *
 from customtkinter import *
@@ -9,9 +15,12 @@ master = Tk()
 # Título do banco:
 master.title('Py_Bank')
 # Tamanho da nossa tela:
-master.geometry('314x674+335+-8')
+master.geometry('315x676')
 # Travar o redicionamento da tela:
 master.wm_resizable(width=False,height=False)
+# Icone do banco:
+ico = PhotoImage(file="imagens\icone.png") # Adicionamos a imagem a uma variavel.
+master.wm_iconphoto(True,ico) # Puxamos a funçao com a janela Master, que e a janela pricipal.
 # -------------------------------------------
 
 
@@ -34,9 +43,16 @@ Botao_Ent = Button(master,image=Imagem_Botao_Entrar,borderwidth=0)
 # Config de cada botão:
 Entrada_Nome.place(x=73,y=388,width=190,height=34) # Config caixa de entrada nome.
 Entrada_Senha.place(x=73,y=453,width=190,height=34) # Config Caixa de entrada senha.
-Botao_Ent.place(x=49,y=510)
+Botao_Ent.place(x=49,y=510) # Config do botão de entrar.
 
 
+
+""""
+Esta função não e usada no algoritmo, apenas foi criada para mapear a tela
+e assim ajudar onde irá ficar cada itém, ao clicar no botão do meio do SCROOL do mouse
+e printado no terminal onde está localizado o mouse no momento, assim ajudando nas conf. 
+dos botões, como (X= e Y=).
+'"""
 # ---------------------------------------
 # Função Clique do mouse
 def clique_do_mouse(retorno):
@@ -46,5 +62,20 @@ def clique_do_mouse(retorno):
 master.bind("<Button-2>",clique_do_mouse) 
 # ---------------------------------------
 
+
 # Codigo obrigatorio do Tkinter, para não fechar a janela atual
 master.mainloop()
+
+
+"""
+
+Requisitos:
+Tkinter: 
+    Caso não tenha instalado execulte o comando no terminal:   pip install tkinter
+
+customtkinter:
+    Irá ser usada no futuro para personalização.
+    Caso não tenha instalado execulte o comando no terminal:   pip install customtkinter
+
+  
+"""
