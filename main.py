@@ -1,5 +1,6 @@
 # Importações dos modulos da interfase grafica:
 from tkinter import *
+from customtkinter import *
 
 # Adicionando a Tkinter a uma variavel:
 master = Tk()
