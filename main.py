@@ -1,8 +1,5 @@
 # Importações dos modulos da interfase grafica:
 from tkinter import *
-from customtkinter import *
-# Pacote onde irá trabalha com imagens .PNG fazendo a parte da retirada do fundo da imagem:
-from PIL import Image, ImageTk
 
 # Adicionando a Tkinter a uma variavel:
 master = Tk()
