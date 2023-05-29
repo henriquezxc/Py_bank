@@ -18,9 +18,6 @@ master.title('Py_Bank')
 master.geometry('315x676')
 # Travar o redicionamento da tela:
 master.wm_resizable(width=False,height=False)
-# Icone do banco:
-ico = PhotoImage(file="imagens\icone.png") # Adicionamos a imagem a uma variavel.
-master.wm_iconphoto(True,ico) # Puxamos a funçao com a janela Master, que e a janela pricipal.
 # -------------------------------------------
 
 
